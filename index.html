@@ -1,665 +1,1109 @@
-<!--
-Author: Alexandre
--->
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-	<title> - | Lavanderia Acqua Marine | -</title>
-	<link rel="icon" href="images/favicon.png"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="utf-8">
-	<meta name="keywords" content="Go Laundry Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-                                   SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-	<script>
-		addEventListener("load", function () {
-			setTimeout(hideURLbar, 0);
-		}, false);
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title> - | AcquaMarine Lavanderia | -</title>
+	<!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.transitions.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
 
-		function hideURLbar() {
-			window.scrollTo(0, 1);
-		}
-	</script>
+<body id="home" class="homepage">
 
-	<!-- Bootstrap Core CSS -->
-	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-	<!-- gallery css -->
-	<link rel="stylesheet" href="css/swipebox.css">
-	<!-- Custom CSS -->
-	<link href="css/style.css" rel='stylesheet' type='text/css' />
-	<link href="css/main-slider.css" rel='stylesheet' type='text/css' />
-	<!-- font-awesome icons -->
-	<link href="css/fontawesome-all.min.css" rel="stylesheet">
-	<!-- //Custom Theme files -->
-	<!--webfonts-->
-	<link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
-	    rel="stylesheet">
-	<!--//webfonts-->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <header id="header">
+        <nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo3.png" alt="logo"></a>
+                </div>
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="scroll active"><a href="#home">Home</a></li>
+                        <li class="scroll"><a href="#features">Sobre</a></li>
+                        <li class="scroll"><a href="#services">Serviços</a></li>
+                        <li class="scroll"><a href="#portfolio">Galeria</a></li>
+                        <li class="scroll"><a href="#about">Franquia</a></li>
+                        <!--<li class="scroll"><a href="#meet-team">Team</a></li>-->
+                        <li class="scroll"><a href="#pricing">Preços</a></li>
+                        <li class="scroll"><a href="#get-in-touch">Lojas</a></li>                        
+                    </ul>
+                </div>
+            </div><!--/.container--> 
+        </nav><!--/nav-->
+    </header><!--/header-->
+    <section id="main-slider">
+        <div class="owl-carousel"> 
+            <div class="item" style="background-image: url(images/slider/bg1.jpg);">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="carousel-content">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.item--> 
+            <div class="item" style="background-image: url(images/slider/bg1.jpg);">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="carousel-content">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.item-->
+             <div class="item" style="background-image: url(images/slider/bg2.jpg);">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="carousel-content">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.item-->
+        </div><!--/.owl-carousel-->
+    </section><!--/#main-slider-->
 
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<style>
-	.mySlides {display:none}
-	.w3-left, .w3-right, .w3-badge {cursor:pointer}
-	.w3-badge {height:13px;width:13px;padding:0}
-	</style>
-</head>
+   <!-- <section id="cta" class="wow fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9">
+                    <h2>Sed ut perspiciatis unde omnis iste</h2>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima.</p>
+                </div>
+                <div class="col-sm-3 text-right">
+                    <a class="btn btn-primary btn-lg" href="#">Reprehenderit Qui!</a>
+                </div>
+            </div>
+        </div>
+    </section> 
+    /*/#cta*/ -->
 
-<body>
-	<!-- header -->
-	<header>
-		<div class="container">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<a class="navbar-brand" href="index.html"></a>
-					<img src="images/logo3.png" alt="some text" width=135 height=80>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
-   						 aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent15">
-					<!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
-						<ul class="navbar-nav mx-auto text-center">
-							&emsp;&emsp;
-							<li class="nav-item active  mr-3">
-								<a class="nav-link" href="index.html">Home</a>
-							</li>
-							<li class="nav-item  mr-3 mx-auto">
-								<a class="nav-link scroll" href="#about">Sobre</a>
-							</li>
-							<li  class="nav-item  mr-3 mx-auto">
-								<a class="nav-link scroll" href="#services">Servicos</a>
-							</li>	
-							<li class="nav-item  mr-3 mx-auto">
-								<a class="nav-link scroll" href="#franqueado">Franquia</a>
-							</li>
-							<li  class="nav-item  mr-3 mx-auto">	
-								<a class="nav-link scroll" href="#gallery">Galeria</a>
-							</li>
-							<li  class="nav-item  mr-3 mx-auto">	
-								<a class="nav-link scroll" href="#pricing">Preços</a>
-							</li>	
-							<li class="nav-item">
-								<a class="nav-link scroll" href="#contact">Lojas</a>
-							</li>
-
-						<!--&emsp; &emsp; &emsp; &emsp;-->
-						<!--<div class="container">					
-							<div class="footerv2-w3ls text-center">
-								<ul class="social-iconsv2 agileinfo mt-3">
-									<li>
-										<a target="_blank" href="https://www.facebook.com/acquamarinelavanderia/">
-											<i class="fab fa-facebook-f"></i>
-										</a>
-									</li>
-									<li>
-										<a target="_blank" href="https://www.instagram.com/acquamarinelavanderia/">
-											<i class="fab fa-instagram"></i>
-										</a>
-									</li>
-								</ul>
-							</div>-->		
-						</ul>
-					</div>						
-				</div>
-			</nav>
-		</div>
-	</header>
-	<!-- //header -->
-	<!-- banner -->
-	<div class="sreen-gallery-cursual" class="owl-carouselpb-5" id="Home">
-		<div class="w3-content w3-display-container" style="background-size: 300px 150px;">
-		  	<img class="mySlides" src="images/bg7.jpg" style="width:100%">
-		 	<img class="mySlides" src="images/bg7.jpg" style="width:100%">
-		 	<img class="mySlides" src="images/bg7.jpg" style="width:100%">
-	  		<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-		    	<div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-		   	    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-		   
-			    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-			    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-			    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-		    
-	  	    </div>
-	    </div>
-    </div>
-	<!-- //banner -->
-	<!-- about -->
-	<section class="about-w3ls" id="about">
-		<div class="container">
-			<div class="jumbotron text-center pt-0">
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<h1 class="ab-title my-5">Sobre</h1>
-				<h2 class="lead">A Acqua Marine é uma empresa 100% nacional de origem familiar da década de 60.
-								Em 1994 passou a ser administrada pelo primogenito do fundador.
-								<br>
-								A partir desse ano a empresa adota uma administração profissional com foco no conhecimento técnico e prático..</h2>
-				<hr class="my-4">
-							<p>A empresa orgulha-se por formar seus profissionais e por jamais terceirizar seus serviços, além de possuir uma enorme responsabilidade com o meio ambiente, 
-							usando sempre produtos biodegradáveis de marcas reconhecidas e registradas na ANVISA.
-							<br>
-							Acqua Marine é uma Empresa que entende e gosta do que faz!</p>
-			</div>
-		</div>
-	</section>
-	<!-- //about -->
-	<!--services-->
-	<div class="agileits-services py-md-5 py-3" id="services">
-		<div class="container">
-			<h3 class="w3ls-title text-center text-capitalize pb-md-5 pb-4">O que fazemos</h3>
-			<div class="agileits-services-row row py-md-5 pb-5">
-				<div class="col-lg-3 col-md-6 agileits-services-grids">
-					<img src="images/mission.png" alt="mission" height="76" width="76">
-					<h4 class="mt-2 mb-3">Missão</h4>
-					<p>Nossa missão é nos tornarmos referência em matéria de lavagem de roupas, sofás, cortinas, etc sem que percamos a dedicação e carinho que temos com as suas roupas</p>
-				</div>
-				<div class="col-lg-3 col-md-6 agileits-services-grids mt-md-0 mt-3">
-					<img src="images/vision.png" alt="vision" height="76" width="76">
-					<h4 class="mt-2 mb-3">Visão</h4>
-					<p>Nós da Acqua Marine prezamos pelo serviço feito com perfeição, tratamos sua roupa da melhor maneira. Aqui a sua roupa é limpa de verdade.</p>
-				</div>
-
-				<div class="col-lg-3 col-md-6 agileits-services-grids mt-lg-0 mt-3">
-					<img src="images/value.png" alt="value" height="76" width="76">
-					<h4 class="mt-2 mb-3">Valores</h4>
-					<p>Nos importamos muito com a transparência que temos para com nossos clientes e queremos que você faça parte da nossa família. Venha conhecer uma de nossas lojas, estaremos completamente abertos para lhes mostrar como tudo funciona, desde o recebimento, passando pelo processo de lavagem, até a entrega.</p>
-				</div>
-				<div class="col-lg-3 col-md-6 agileits-services-grids mt-lg-0 mt-3">
-					<img src="images/team.png" alt="team" height="76" width="76">
-					<h4 class="mt-2 mb-3">Equipe</h4>
-					<p>Formada por uma equipe profissional, dedicada e que já trabalha há anos conosco, a Acqua Marine é uma das melhores do ramo. Você não vai se arrepender em confiar tuas roupas conosco.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //services-->
-	<!-- stats -->
-	<section class="agile_stats text-center py-5" id="franqueado">
-		<div class="container pt-sm-5">
-			<div class="stats_agile mb-sm-5 mb-3">
-				<h3 class="stat-title text-capitalize pb-md-5 pb-4">Seja um franqueado Acqua Marine</h3>
-			</div>
-			<div class="row">
-				<div class="col-lg-12 col-md-6 mt-lg-0  mt-sm-5 mt-3">
-					<div class="counter  pt-5 px-3 pb-3">
-						<p class="count-text text-capitalize">Saiba mais Sobre nossa Franquia</p>
-						<p class="count-text text-capitalize">Ricardo - (11) 98744-1563</p>
-						<p class="count-text text-capitalize">Luiz - (11) 96722-9909</p>
-						<p class="count-text text-capitalize">E-mail:</p>
-						<p class="count-text text-capitalize">lavanderia_acquamarine@outlook.com</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- //stats -->
-	<!-- gallery -->
-	<div class="gallery  py-md-5 py-3" id="gallery">
-		<div class="container">
-			<h3 class="w3ls-title text-center text-capitalize py-md-4 py-3">Galeria</h3>
-			<div class="gallery_gds row pt-md-5 pt-3">
-				<div class="col-4 gal-w3l">
-					<div class="agileits-img">
-						<a href="images/g1.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
-							<img class="img-responsive img-style row2" src="images/g1.jpg" alt="" />
-						</a>
-					</div>
-				</div>
-				<div class="col-4  gal-w3l">
-					<div class="agileits-img">
-						<a href="images/g2.jpg" class="swipebox" title="Duis maximus tortor diam, ac lobortis justo rutrum quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non purus fermentum, eleifend velit non">
-							<img src="images/g2.jpg" alt="" class="img-responsive img-style row2" />
-						</a>
-					</div>
-				</div>
-				<div class="col-4  gal-w3l">
-					<div class="agileits-img">
-						<a href="images/g3.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
-							<img src="images/g3.jpg" alt="" class="img-responsive img-style row2" />
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="gallery_gds row">
-				<div class="col-4  gal-w3l">
-					<div class="agileits-img">
-						<a href="images/g4.jpg" class="swipebox" title="Praesent non purus fermentum, eleifend velit non Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis.">
-							<img src="images/g4.jpg" alt="" class="img-responsive img-style row2" />
-						</a>
-					</div>
-				</div>
-				<div class="col-4  gal-w3l">
-					<div class="agileits-img">
-						<a href="images/g5.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
-							<img src="images/g5.jpg" alt="" class="img-responsive img-style row2" />
-						</a>
-					</div>
-				</div>
-				<div class="col-4  gal-w3l">
-					<div class="agileits-img">
-						<a href="images/g6.jpg" class="swipebox" title="Duis maximus tortor diam, ac lobortis justo rutrum quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non purus fermentum, eleifend velit non">
-							<img src="images/g6.jpg" alt="" class="img-responsive img-style row2" />
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="row pb-md-5 pb-3">
-				<div class="col-4  gal-w3l">
-					<div class="agileits-img">
-						<a href="images/g7.jpg" class="swipebox" title="Praesent non purus fermentum, eleifend velit non Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis.">
-							<img src="images/g7.jpg" alt="" class="img-responsive img-style row2" />
-						</a>
-					</div>
-				</div>
-				<div class="col-4  gal-w3l">
-					<div class="agileits-img">
-						<a href="images/g8.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
-							<img src="images/g8.jpg" alt="" class="img-responsive img-style row2" />
-						</a>
-					</div>
-				</div>
-				<div class="col-4  gal-w3l">
-					<div class="agileits-img">
-						<a href="images/g9.jpg" class="swipebox" title="Duis maximus tortor diam, ac lobortis justo rutrum quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non purus fermentum, eleifend velit non">
-							<img src="images/g9.jpg" alt="" class="img-responsive img-style row2" />
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //gallery -->
-	<!-- pricing -->
-	<section class="wthree-row py-md-5 pt-sm-5" id="pricing">
-		<div class="container py-md-5 py-3">
-			<h3 class="w3ls-title text-center text-capitalize pb-md-5 pb-4">Tabela de Preços</h3>
-			<div class="row pb-5">
-				<div class="col-lg-3 col-md-6 text-center  pb-0 pt-3 px-3 agile-pricegrid">
-					<div class="bg-price py-sm-3 rounded-top text-center">
-						<h4>Lavagem</h4>
-						<span class="mx-auto my-2"></span>
-					</div>
-					<div class="p-3">
-						<span>Simples</span>
-					</div>
-					<ul class="list-group-flush">
-						<li class="list-group-item text-left">Blazer -------------- R$25,50</li>
-						<li class="list-group-item text-left">Blusa -------------- R$19,00</li>
-						<li class="list-group-item text-left">Calça -------------- R$19,50</li>
-						<li class="list-group-item text-left">Camisa(Passar) ----- R$9,50</li>
-						<li class="list-group-item text-left">Camisa(Lavar) ---- R$14,50</li>
-						<li class="list-group-item text-left">Cobertor(Solt) ----- R$33,00</li>
-						<li class="list-group-item text-left">Cobertor(Casal) --- R$37,00</li>
-					</ul>
-				</div>
-				<div class="col-lg-3 col-md-6 text-center pb-0 pt-3 px-3 agile-pricegrid">
-					<div class="bg-price py-sm-3 rounded-top text-center">
-						<h4>Lavagem</h4>
-						<span class="mx-auto my-2"></span>
-					</div>
-					<div class="p-3">
-						<span>Simples</span>
-					</div>
-					<ul class="list-group-flush">
-						<li class="list-group-item text-left">Edredom(Solt) ---- R$39,00</li>
-						<li class="list-group-item text-left">Edredom(Casal) --- R$45,00</li>
-						<li class="list-group-item text-left">Edredom(King) ---- R$55,00</li>
-						<li class="list-group-item text-left">Edredom(Pena) --- R$95,00</li>
-						<li class="list-group-item text-left">Jaqueta ----------- R$32,00</li>
-						<li class="list-group-item text-left">Saia -------------- R$23,00</li>
-						<li class="list-group-item text-left">Terno ------------- R$45,00</li>
-						<li class="list-group-item text-left">Vestidos ----------- R$45,00</li>
-					</ul>
-				</div>
-				<div class="col-lg-3 col-md-6 text-center p-3  agile-pricegrid">
-					<div class="bg-price py-sm-3 rounded-top text-center">
-						<h4>Serviço</h4>
-						<span class="mx-auto my-2"></span>
-					</div>
-					<div class="p-3">
-						<span>Artesanal</span>
-					</div>
-					<ul class="list-group-flush">
-						<li class="list-group-item text-left">Calça -------------- R$32,00</li>
-						<li class="list-group-item text-left">Camisa ------------ R$19,50</li>
-						<li class="list-group-item text-left">Paletó/Blazer ------ R$39,00</li>
-						<li class="list-group-item text-left">Terno -------------- R$71,00</li>
-						<li class="list-group-item text-left">Vestido Seda ------ R$75,00</li>
-						<li class="list-group-item text-left">Vestido Festa ---- R$170,00</li>
-						<li class="list-group-item text-left">Gravatas ----------- R$58,00</li>
-					</ul>
-				</div>
-				<div class="col-lg-3 col-md-6 text-center pb-0 pt-3 px-3 agile-pricegrid">
-					<div class="bg-price py-sm-3 rounded-top text-center">
-						<h4>Serviço</h4>
-						<span class="mx-auto my-2"></span>
-					</div>
-					<div class="p-3">
-						<span>Tapetes</span>
-					</div>
-					<ul class="list-group-flush">
-						<li class="list-group-item text-left">Comum Nacional -- R$45,00</li>
-						<li class="list-group-item text-left">Kilim -------------- R$55,00</li>
-						<li class="list-group-item text-left">Belga e Sisal ------ R$55,00</li>
-						<li class="list-group-item text-left">Ruth,Santa Monica  R$75,00</li>
-						<li class="list-group-item text-left">Arraiolo ----------- R$75,00</li>
-						<li class="list-group-item text-left">Persa -------------- R$85,00</li>
-						<li class="list-group-item text-left">Chines,Marroquino  R$85,00</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- //pricing -->
-	<!-- testimonials -->
-		<section class="wthree-row py-5 testi-agile" id="testimonials">
-		<div class="container py-md-5 py-3">
-			<h3 class="w3ls-title text-center text-capitalize pb-md-5 pb-4">Pacotes e Promoções</h3>
-			<div class="w3_testimonials_grids w3_testimonials_grids">
-				<!--<div class="sreen-gallery-cursual">-->
-					<!--<div id="owl-demo" class="owl-carouselpb-5">-->
-						<!-- Botão dropright padrão -->
-						<!-- Split button -->
-						<div class="btn-group">
-						  <button type="button" class="btn btn-danger">Danger</button>
-						  <button type="button" class="btn btn-danger dropdown-toggle px-3" data-toggle="dropdown" aria-haspopup="true"
-						    aria-expanded="false">
-						    <span class="sr-only">Toggle Dropdown</span>
-						  </button>
-						  <div class="dropdown-menu">
-						    <a class="dropdown-item" href="#">Action</a>
-						    <a class="dropdown-item" href="#">Another action</a>
-						    <a class="dropdown-item" href="#">Something else here</a>
-						    <div class="dropdown-divider"></div>
-						    <a class="dropdown-item" href="#">Separated link</a>
-						  </div>
-						</div>
-					<!--</div>-->
-				<!--</div>-->
-			</div>
-		</div>
-	</section>
-	<section class="wthree-row py-5 w3-contact" id="contact">
-		<div class="container py-md-5">
-			<h3 class="w3ls-title text-center text-capitalize pb-md-5 pb-4">Nossas Lojas</h3>
-			<div class="row contact-form py-3">
-				<div class="col-lg-6  mt-lg-0 mt-5 map contact-center">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.97650535152!2d-46.6533571850221!3d-23.56928728467888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59bf5f7a8bc5%3A0xc6809d45da98b4ed!2sAlameda+Ja%C3%BA%2C+45+-+Jardim+Paulista%2C+S%C3%A3o+Paulo+-+SP%2C+01420-001!5e0!3m2!1sfr!2sbr!4v1553380488387" width="400" height="400" frameborder="0" style="border:0" allowfullscreen>						
-					</iframe>
-				</div>
-				
-				 <div class="row">
-                        <div class="col-sm-5">
-                            <ul class="nostyle">
-                                <li class="text-center">Unidade 1
-                                	<h6 class="text-center">Rua Alameda Jáu, 45 - Jardim Paulista</h6>
-                                	<h6>11 3288-5274</h6>
-                                </li>
+    <section id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown" style="color:#0F0E48";>Sobre</h2>
+                <h3 class="text-center wow fadeInDown">A Acqua Marine é uma empresa 100% nacional de origem familiar da década de 60.
+                                Em 1994 passou a ser administrada pelo primogenito do fundador.A partir desse ano a empresa adota uma administração profissional com foco no conhecimento técnico e prático.</h3>
+                            <hr class="my-3">
+                            <br>
+                                <p class="text-center wow fadeInDown">A empresa orgulha-se por formar seus profissionais e por jamais terceirizar seus serviços, além de possuir uma enorme responsabilidade com o meio ambiente,<br> 
+                                 usando sempre produtos biodegradáveis de marcas reconhecidas e registradas na ANVISA.
                                 <br>
-                                <br>                             
-                                <li class="text-center">Unidade 2
-                                	<h6 class="text-center">Rua Alameda Jáu, 45 - Jardim Paulista</h6>
-                                	<h6>11 3288-5274</h6>
-                                </li>
+                                Acqua Marine é uma Empresa que entende e gosta do que faz!</p>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-6 wow fadeInLeft">
+                    <img class="img-responsive" src="images/main-feature.png" alt="">
+                </div>
+                <div class="col-sm-6">
+                    <div class="media service-box wow fadeInRight">
+                        <div class="pull-left">
+                        <img src="images/mission.png" alt="team" height="76" width="76">
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Missão</h4>
+                            <p>Nossa missão é nos tornarmos referência em matéria de lavagem de roupas, sofás, cortinas, etc sem que percamos a dedicação e carinho que temos com as suas roupas</p>
+                        </div>
+                    </div>
+
+                    <div class="media service-box wow fadeInRight">
+                        <div class="pull-left">
+                            <img src="images/vision.png" alt="team" height="76" width="76">
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Visão</h4>
+                            <p>Nós da Acqua Marine prezamos pelo serviço feito com perfeição, tratamos sua roupa da melhor maneira. Aqui a sua roupa é limpa de verdade.</p>
+                        </div>
+                    </div>
+
+                    <div class="media service-box wow fadeInRight">
+                        <div class="pull-left">
+                            <img src="images/value.png" alt="team" height="76" width="76">
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Valores</h4>
+                            <p>Nos importamos muito com a transparência que temos para com nossos clientes e queremos que você faça parte da nossa família. Venha conhecer uma de nossas lojas, estaremos completamente abertos para lhes mostrar como tudo funciona, desde o recebimento, passando pelo processo de lavagem, até a entrega.</p>
+                        </div>
+                    </div>
+
+                    <div class="media service-box wow fadeInRight">
+                        <div class="pull-left">
+                            <img src="images/team.png" alt="team" height="76" width="76">
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Equipe</h4>
+                            <p>Formada por uma equipe profissional, dedicada e que já trabalha há anos conosco, a Acqua Marine é uma das melhores do ramo. Você não vai se arrepender em confiar tuas roupas conosco.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta2">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">NOSSA EMPRESA <span>TEM OS MELHORES CLINTES</span></h2>
+                <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto TextoTexto Texto<br>Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto TextoTexto Texto</p>
+                <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto TextoTexto Texto<br>Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto TextoTexto Texto</p>
+                <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">TESTE TESTE</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" >
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown" style="color:#0F0E48";>Serviços</h2>
+                <p class="text-center wow fadeInDown">Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto TextoTexto Texto</p>
+            </div>
+
+            <div class="row">
+                <div class="features">
+                    <div class="col-md-2 col-sm-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-key"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Ut Enim</h4>
+                                <p>Minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex commodi</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-2 col-sm-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-lock"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Quis Autem</h4>
+                                <p>Reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-2 col-sm-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-power-off"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"> At Vero Eos</h4>
+                                <p>Accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-2 col-sm-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-key"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Ut Enim</h4>
+                                <p>Minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex commodi</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-2 col-sm-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-lock"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Quis Autem</h4>
+                                <p>Reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-2 col-sm-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-power-off"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"> At Vero Eos</h4>
+                                <p>Accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-2 col-sm-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-key"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Ut Enim</h4>
+                                <p>Minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex commodi</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-2 col-sm-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-lock"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Quis Autem</h4>
+                                <p>Reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-2 col-sm-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-power-off"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"> At Vero Eos</h4>
+                                <option value="valor1">Opção 1</option>
+                                <p>Accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-2 col-sm-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-key"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Ut Enim</h4>
+                                <p>Minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex commodi</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-2 col-sm-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-lock"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Quis Autem</h4>
+                                <p>Reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-2 col-sm-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-power-off"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"> At Vero Eos</h4>
+                                <p>Accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-2 col-sm-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-key"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Ut Enim</h4>
+                                <p>Minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex commodi</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-2 col-sm-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-lock"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Quis Autem</h4>
+                                <p>Reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-2 col-sm-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-power-off"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"> At Vero Eos</h4>
+                                <p>Accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-2 col-sm-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-key"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Ut Enim</h4>
+                                <p>Minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex commodi</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-2 col-sm-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-lock"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Quis Autem</h4>
+                                <p>Reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-2 col-sm-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-power-off"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"> At Vero Eos</h4>
+                                <p>Accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                </div>
+            </div><!--/.row-->    
+        </div><!--/.container-->
+    </section><!--/#services-->
+
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown" style="color:#0F0E48";>Galeria</h2>
+                <p class="text-center wow fadeInDown"> Texto Texto Texto Texto Texto Texto  Texto Texto TextoTexto Texto Texto TextoTexto Texto Texto.<br>Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto TextoTexto Texto</p>
+            </div>
+
+            <!--<div class="text-center">
+                <ul class="portfolio-filter">
+                    <li><a class="active" href="#" data-filter="*">Perspiciatis</a></li>
+                    <li><a href="#" data-filter=".filter1">Voluptatem</a></li>
+                    <li><a href="#" data-filter=".filter2">Aperiam</a></li>
+                    <li><a href="#" data-filter=".filter3">Inventore</a></li>
+                </ul>/*portfolio-filter*/
+            </div>-->
+
+            <div class="portfolio-items">
+                <div class="portfolio-item filter1">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/01.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Nemo enim ipsam</h3>
+                            Voluptatem quia voluptas
+                            <a class="preview" href="images/portfolio/01.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item filter2 filter3">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/02.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Sed quia consequ</h3>
+                            Magni dolores eos qui
+                            <a class="preview" href="images/portfolio/02.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item filter1">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/03.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Neque porro</h3>
+                            Qui dolorem ipsum quia
+                            <a class="preview" href="images/portfolio/03.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item filter2">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/04.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Sed quia non numquam</h3>
+                            Eius modi tempora incidunt
+                            <a class="preview" href="images/portfolio/04.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item filter1 filter3">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/05.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Labore et dolore</h3>
+                            Lorem Ipsum Dolor Sit
+                            <a class="preview" href="images/portfolio/05.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item filter2">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/06.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Quis autem vel</h3>
+                            Ut enim ad minima veniam
+                            <a class="preview" href="images/portfolio/06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item filter1 filter3">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/07.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Quis nostrum</h3>
+                            Exercitationem ullam
+                            <a class="preview" href="images/portfolio/07.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item filter2">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/08.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Corporis suscipit</h3>
+                            Nisi ut aliquid ex ea
+                            <a class="preview" href="images/portfolio/08.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+            </div>
+        </div><!--/.container-->
+    </section><!--/#portfolio-->
+
+    <section id="about">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown" style="color:#0F0E48";>Franquia</h2>
+                <p class="text-center wow fadeInDown">Seja um franqueado Acqua Marine</p>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 wow fadeInLeft">
+                    <h3 class="column-title">Video</h3>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.youtube.com/embed/XH7OShyZ1Ek" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 wow fadeInRight">
+                    <h3 class="column-title">Contato</h3>
+                    <p>Saiba mais Sobre nossa Franquia</p>
+                    <p>Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto TextoTexto Texto Texto TextoTexto Texto Texto TextoTexto Texto Texto TextoTexto Texto Texto.</p>
+                    <p>Ricardo - (11) 98744-1563</p>
+                    <p>Luiz - (11) 96722-9909</p>
+                    <p>>E-mail:</p>
+                    <p>lavanderia_acquamarine@outlook.com</p>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="nostyle">
+                                <li><i class="fa fa-check-square"></i> Franquia com Marketing incluido</li>
+                                <li><i class="fa fa-check-square"></i> Investimento pago em 6-8 meses</li>
                             </ul>
                         </div>
-                        <div class="col-sm-5">
+
+                        <div class="col-sm-6">
                             <ul class="nostyle">
-                                <li class="text-center">Unidade 3
-                                	<h6 class="text-center">Rua Alameda Jáu, 45 - Jardim Paulista</h6>
-                                	<h6>11 3288-5274</h6>
-                                </li>
-                                <br>
-                                <br>
-                                <li class="text-center">E-mail
-                                	<h6 class="text-center">Rua Alameda Jáu, 45 - Jardim Paulista</h6>
-                                	<h6>11 3288-5274</h6>
-                                </li>
+                                <li><i class="fa fa-check-square"></i> Estrutura completa</li>
+                                <li><i class="fa fa-check-square"></i> Todo o conteudo necessario</li>
                             </ul>
                         </div>
                     </div>
-				
-			</div>
-		</div>
-	</section>
-	<!-- slide -->
-	<section class="wthree-row py-sm-5 py-3 slide-bg bg-dark">
-		<div class="container py-md-5 py-3">
-			<div class="py-lg-5 bg-pricemain">
-				<h3 class="agile-title text-capitalize text-white">A Acqua Marine</h3>
-				<span class="w3-line"></span>
-				<h5 class="agile-title text-capitalize pt-4">é uma Empresa que entende e gosta do que faz!</h5>
-				<p class="text-light py-sm-4 py-2">
-					Conheça nossa empresa e nunca mais use uma máquina de lavar roupas.
-				</p>
-			</div>
-		</div>
-	</section>
-	<!--//slide-->
-	<!-- footer -->
-	<footer class="py-md-5 pt-5 pb-4">
-		<div class="container">
-			<!-- footer grid top -->
-			<div class="footerv2-w3ls text-center">
-				<h4 class="w3ls-title text-capitalize pb-3">Nossas Redes Sociais</h4>
-				<ul class="social-iconsv2 agileinfo mt-3">
-					<li>
-						<a target="_blank" href="https://www.facebook.com/acquamarinelavanderia/">
-							<i class="fab fa-facebook-f"></i>
-						</a>
-					</li>
-					<li>
-						<a target="_blank" href="https://www.instagram.com/acquamarinelavanderia/">
-							<i class="fab fa-instagram"></i>
-						</a>
-					</li>
-				</ul>
-				<div class="fv3-contact mt-3">
-					<span class="fas fa-envelope-open mr-2"></span>
-					<p>
-						<a href="mailto:example@email.com" class="text-dark">lavanderia_acquamarine@outlook.com</a>
-					</p>
-				</div>
-				<div class="fv3-contact">
-					<span class="fas fa-phone-volume mr-2"></span>
-					<p>3288-5274</p>
-				</div>
-			</div>
-			<br>
-			<br>
-			<br>
-			<br>
-			<div class="cpy-right text-center pt-5">
-				<p>© 2019 Acqua Marine Lavanderia. Todos os direitos reservados. | Design by
-					<a>AlexSites</a>
-				</p>
-			</div>
-		</div>
-	</footer>
-	<!-- //footer -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<a href="https://wa.me/5511946340485?text=Adorei%20seu%20artigo" Style="position:fixed;width:60px;height:60px;bottom:60px;right:30px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
-	     z-index:1000;" target="_blank">
-		<i style="margin-top:16px" class="fa fa-whatsapp"></i>
-		</a>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<a href="https://wa.me/5511946340485?text=Adorei%20seu%20artigo" Style="position:fixed;width:50px;height:50px;bottom:205px;right:30px;background-color:#3b5998;color:#FFF;border-radius:50px;text-align:center;font-size:25px;box-shadow: 1px 1px 2px #888;
-	     z-index:1000;" target="_blank">
-		<i style="margin-top:16px" class="fa fa-facebook-f"></i>
-		</a>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<a href="https://wa.me/5511946340485?text=Adorei%20seu%20artigo" Style="position:fixed;width:50px;height:50px;bottom:135px;right:30px;background-color:#f09433;color:#FFF;border-radius:50px;text-align:center;font-size:25px;box-shadow: 1px 1px 2px #888;
-	     z-index:1000;background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);box-shadow: 0px 3px 10px rgba(0,0,0,.25);"		
-	      target="_blank">
-		<i style="margin-top:16px" class="fa fa-instagram"></i>
-		</a>
-	<!-- js-->
-	<script>
-	var slideIndex = 1;
-	showDivs(slideIndex);
 
-	function plusDivs(n) {
-	  showDivs(slideIndex += n);
-	}
+                    <a class="btn btn-primary" href="#">Conheça Mais</a>
 
-	function currentDiv(n) {
-	  showDivs(slideIndex = n);
-	}
+                </div>
+            </div>
+        </div>
+    </section><!--/#about-->
 
-	function showDivs(n) {
-	  var i;
-	  var x = document.getElementsByClassName("mySlides");
-	  var dots = document.getElementsByClassName("demo");
-	  if (n > x.length) {slideIndex = 1}
-	  if (n < 1) {slideIndex = x.length}
-	  for (i = 0; i < x.length; i++) {
-	    x[i].style.display = "none";  
-	  }
-	  for (i = 0; i < dots.length; i++) {
-	    dots[i].className = dots[i].className.replace(" w3-white", "");
-	  }
-	  x[slideIndex-1].style.display = "block";  
-	  dots[slideIndex-1].className += " w3-white";
-	}
-	</script>
-	<script src="js/jquery-2.2.3.min.js"></script>
-	<!-- js-->
-	<!-- Banner text Responsiveslides -->
-	<script src="js/responsiveslides.min.js"></script>
-	<script>
-		// You can also use "$(window).load(function() {"
-		$(function () {
-			// Slideshow 4
-			$("#slider3").responsiveSlides({
-				auto: true,
-				pager: true,
-				nav: false,
-				speed: 500,
-				namespace: "callbacks",
-				before: function () {
-					$('.events').append("<li>before event fired.</li>");
-				},
-				after: function () {
-					$('.events').append("<li>after event fired.</li>");
-				}
-			});
+    <section id="work-process">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">A AcquaMarine Lavanderia</h2>
+                <p class="text-center wow fadeInDown">É uma Empresa que entende e gosta do que faz!<br>Conheça nossa empresa e nunca mais use uma máquina de lavar roupas.<br>Não deixe de conheçer nossas unidades.</p>
+            </div>
+            <div class="row text-center"></div>
+        </div>
+    </section><!--/#work-process-->
 
-		});
-	</script>
-	<!-- //Banner text  Responsiveslides -->
-	<script>
-		var slideIndex = 1;
-		showDivs(slideIndex);
+    <!--<section id="meet-team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">OUR TEAM</h2>
+                <p class="text-center wow fadeInDown">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,<br>totam rem aperiam, eaque ipsa quae ab illo inventore veritati</p>
+            </div>
 
-		function plusDivs(n) {
-		  showDivs(slideIndex += n);
-		}
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <div class="team-img">
+                            <img class="img-responsive img-circle" src="images/team/01.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Jane Dohan</h3>
+                            <span>Co-Founder</span>
+                        </div>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
+                        <div class="team-img">
+                            <img class="img-responsive img-circle" src="images/team/02.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Leny Fuston</h3>
+                            <span>Accounter</span>
+                        </div>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
+                        <div class="team-img">
+                            <img class="img-responsive img-circle" src="images/team/03.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Sander Bell</h3>
+                            <span>Designer</span>
+                        </div>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-img">
+                            <img class="img-responsive img-circle" src="images/team/04.jpg" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>Nartleb August</h3>
+                            <span>Director</span>
+                        </div>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-		function currentDiv(n) {
-		  showDivs(slideIndex = n);
-		}
+            <div class="divider"></div>
 
-		function showDivs(n) {
-		  var i;
-		  var x = document.getElementsByClassName("mySlides");
-		  var dots = document.getElementsByClassName("demo");
-		  if (n > x.length) {slideIndex = 1}
-		  if (n < 1) {slideIndex = x.length}
-		  for (i = 0; i < x.length; i++) {
-		    x[i].style.display = "none";  
-		  }
-		  for (i = 0; i < dots.length; i++) {
-		    dots[i].className = dots[i].className.replace(" w3-white", "");
-		  }
-		  x[slideIndex-1].style.display = "block";  
-		  dots[slideIndex-1].className += " w3-white";
-		}
-	</script>
-	<!-- start-smooth-scrolling -->
-	<script src="js/move-top.js "></script>
-	<script src="js/easing.js "></script>
-	<script>
-		jQuery(document).ready(function ($) {
-			$(".scroll ").click(function (event) {
-				event.preventDefault();
+            <div class="row">
 
-				$('html,body').animate({
-					scrollTop: $(this.hash).offset().top
-				}, 1000);
-			});
-		});
-	</script>
-	<!-- //end-smooth-scrolling -->
-	<!-- smooth-scrolling-of-move-up -->
-	<script>
-		$(document).ready(function () {
-			/*
-			 var defaults = {
-				 containerID: 'toTop', // fading element id
-				 containerHoverID: 'toTopHover', // fading element hover id
-				 scrollSpeed: 1200,
-				 easingType: 'linear' 
-			 };
-			 */
+                <div class="col-sm-4">
+                    <h3 class="column-title">Modi Tempora</h3>
+                    <div role="tabpanel">
+                        <ul class="nav main-tab nav-justified" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#tab1" role="tab" data-toggle="tab" aria-controls="tab1" aria-expanded="true">2010</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#tab2" role="tab" data-toggle="tab" aria-controls="tab2" aria-expanded="false">2011</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#tab3" role="tab" data-toggle="tab" aria-controls="tab3" aria-expanded="false">2013</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#tab4" role="tab" data-toggle="tab" aria-controls="tab4" aria-expanded="false">2014</a>
+                            </li>
+                        </ul>
+                        <div id="tab-content" class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade active in" id="tab1" aria-labelledby="tab1">
+                                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+                                <p>velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero.</p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="tab2" aria-labelledby="tab2">
+                                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+                                <p>velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero.</p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="tab3" aria-labelledby="tab3">
+                                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+                                <p>velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero.</p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="tab4" aria-labelledby="tab3">
+                                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+                                <p>velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4">
+                    <h3 class="column-title">Similique Sunt</h3>
+                    <strong>Voluptas Sit Aspernatur</strong>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-primary" role="progressbar" data-width="90">85%</div>
+                    </div>
+                    <strong>Quia Consequuntur</strong>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-primary" role="progressbar" data-width="85">70%</div>
+                    </div>
+                    <strong>Neque Porro Quisquam</strong>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-primary" role="progressbar" data-width="95">90%</div>
+                    </div>
+                    <strong>Numquam Eius</strong>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-primary" role="progressbar" data-width="78">65%</div>
+                    </div>
+                </div>
 
-			$().UItoTop({
-				easingType: 'easeOutQuart'
-			});
+                <div class="col-sm-4">
+                    <h3 class="column-title">Dignissimos</h3>
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Ducimus qui blanditiis praesentium
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    Deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Nam libero tempore, cum soluta
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    Deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Nobis est eligendi optio cumque 
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    Deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		});
-	</script>
-	<script src="js/SmoothScroll.min.js "></script>
-	<!-- //smooth-scrolling-of-move-up -->
-	<!-- gallery swipebox -->
-	<script src="js/jquery.swipebox.min.js"></script>
-	<script>
-		jQuery(function ($) {
-			$(".swipebox").swipebox();
-		});
-	</script>
-	<script src="js/jquery.adipoli.min.js"></script>
-	<!-- effect -->
-	<script>
-		$(function () {
-			$('.row2').adipoli({
-				'startEffect': 'overlay',
-				'hoverEffect': 'sliceDown'
-			});
-		});
-	</script>
-	<!-- //swipe box js -->
-	<!-- stats counter -->
-	<script src="js/counter.js"></script>
-	<!-- Date picker -->
-	<link rel="stylesheet" href="css/jquery-ui.css" />
-	<script src="js/jquery-ui.js"></script>
-	<script>
-		$(function () {
-			$("#datepicker1,#datepicker2").datepicker();
-		});
-	</script>
-	<!-- // Date picker -->
-	<!-- testimonials -->
-	<link href="css/owl.carousel.css" rel="stylesheet">
-	<script src="js/owl.carousel.js"></script>
-	<script>
-		$(document).ready(function () {
-			$("#owl-demo").owlCarousel({
-				items: 1,
-				lazyLoad: true,
-				autoPlay: false,
-				navigation: true,
-				navigationText: true,
-				pagination: true,
-			});
-		});
-	</script>
-	<!-- //for testimonials slider-js-script-->
-	<!-- Bootstrap Core JavaScript -->
-	<script src="js/bootstrap.js ">
-	</script>
-	<!-- //Bootstrap Core JavaScript -->
+            </div>
+        </div>
+    </section>
+    /*meet-team*/
+
+    <section id="animated-number">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Impedit Quo Minus</h2>
+                <p class="text-center wow fadeInDown">id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.<br>Temporibus autem quibusdam et aut officiis debitis aut</p>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-sm-3 col-xs-6">
+                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <div class="animated-number" data-digit="1234" data-duration="1000"></div>
+                        <strong>Itaque Earum Rerum Hic</strong>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
+                        <div class="animated-number" data-digit="3214" data-duration="1000"></div>
+                        <strong>Tenetur a Sapiente</strong>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
+                        <div class="animated-number" data-digit="4123" data-duration="1000"></div>
+                        <strong>Aut Reiciendis</strong>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="animated-number" data-digit="2233" data-duration="1000"></div>
+                        <strong>Voluptatibus Maiores</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!--/#animated-number-->
+
+    <section id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown" style="color:#0F0E48";>Nossos Preços</h2>
+                <p class="text-center wow fadeInDown"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque<br>laudantium, totam rem aperiam, eaque ipsa quae ab illo</p>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <ul class="pricing">
+                            <li class="plan-header">
+                               <!-- <div class="price-duration">
+                                   <span class="price">
+                                        $15
+                                    </span>
+                                    <span class="duration">
+                                        per year
+                                    </span>
+                                </div>-->
+
+                                <div class="plan-name">
+                                    Plan One
+                                </div>
+                            </li>
+                            <li><strong>10</strong> EXCEPTURL</li>
+                            <li><strong>120</strong> NIHIL</li>
+                            <li><strong>EXPEDITA</strong> DISCTINTO</li>
+                            <li>LUSTO ODIMO ATQUE</li>
+                            <li><strong>15</strong> RATIONE COLUPTATEM</li>
+                            <li><strong>24/7</strong> SAPIENTE</li>
+                            <li>LUSTO ODIMO ATQUE</li>
+                            <li>15 RATIONE COLUPTATEM</li>
+                            <li>24/7 SAPIENTE</li>
+                            <!--<li class="plan-purchase"><a class="btn btn-primary" href="#">GET NOW</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <ul class="pricing">
+                            <li class="plan-header">
+                               <!-- <div class="price-duration">
+                                   <span class="price">
+                                        $15
+                                    </span>
+                                    <span class="duration">
+                                        per year
+                                    </span>
+                                </div>-->
+
+                                <div class="plan-name">
+                                    Plan One
+                                </div>
+                            </li>
+                            <li>10 EXCEPTURL</li>
+                            <li>120 NIHIL</li>
+                            <li>EXPEDITA DISCTINTO</li>
+                            <li>LUSTO ODIMO ATQUE</li>
+                            <li>15 RATIONE COLUPTATEM</li>
+                            <li>24/7 SAPIENTE</li>
+                            <li>LUSTO ODIMO ATQUE</li>
+                            <li>15 RATIONE COLUPTATEM</li>
+                            <li>24/7 SAPIENTE</li>
+                            <!--<li class="plan-purchase"><a class="btn btn-primary" href="#">GET NOW</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="400ms">
+                        <ul class="pricing">
+                            <li class="plan-header">
+                                <!--<div class="price-duration">
+                                    <span class="price">
+                                        $40
+                                    </span>
+                                    <span class="duration">
+                                        per year
+                                    </span>
+                                </div>-->
+
+                                <div class="plan-name">
+                                    Plan Three
+                                </div>
+                            </li>
+                            <li><strong>10</strong> EXCEPTURL</li>
+                            <li><strong>120</strong> NIHIL</li>
+                            <li><strong>EXPEDITA</strong> DISCTINTO</li>
+                            <li>LUSTO ODIMO ATQUE</li>
+                            <li><strong>15</strong> RATIONE COLUPTATEM</li>
+                            <li><strong>24/7</strong> SAPIENTE</li>
+                            <li>LUSTO ODIMO ATQUE</li>
+                            <li>15 RATIONE COLUPTATEM</li>
+                            <li>24/7 SAPIENTE</li>
+                            <!--<li class="plan-purchase"><a class="btn btn-primary" href="#">GET NOW</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="600ms">
+                        <ul class="pricing">
+                            <li class="plan-header">
+                                <!--<div class="price-duration">
+                                    <span class="price">
+                                        $58
+                                    </span>
+                                    <span class="duration">
+                                        per year
+                                    </span>
+                                </div>-->
+
+                                <div class="plan-name">
+                                    Plan Four
+                                </div>
+                            </li>
+                            <li><strong>10</strong> EXCEPTURL</li>
+                            <li><strong>120</strong> NIHIL</li>
+                            <li><strong>EXPEDITA</strong> DISCTINTO</li>
+                            <li>LUSTO ODIMO ATQUE</li>
+                            <li><strong>15</strong> RATIONE COLUPTATEM</li>
+                            <li><strong>24/7</strong> SAPIENTE</li>
+                            <li>LUSTO ODIMO ATQUE</li>
+                            <li>15 RATIONE COLUPTATEM</li>
+                            <li>24/7 SAPIENTE</li>
+                           <!--<li class="plan-purchase"><a class="btn btn-primary" href="#">GET NOW</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--/#pricing-->
+
+    <!--<section id="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+
+                    <div id="carousel-testimonial" class="carousel slide text-center" data-ride="carousel">
+                        /* Wrapper for slides */
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <p><img class="img-circle img-thumbnail" src="images/testimonial/01.jpg" alt=""></p>
+                                <h4>Yetty L. Steven</h4>
+                                <small>Nemo enim ipsam voluptatem quia voluptas sit</small>
+                                <p>Aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est</p>
+                            </div>
+                            <div class="item">
+                                <p><img class="img-circle img-thumbnail" src="images/testimonial/02.jpg" alt=""></p>
+                                <h4>Gerry Munstons</h4>
+                                <small>Itaque earum rerum hic tenetur a sapiente delectus</small>
+                                <p>Ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Sed ut perspiciatis unde omnis</p>
+                            </div>
+                        </div>
+
+                        /* Controls */
+                        <div class="btns">
+                            <a class="btn btn-primary btn-sm" href="#carousel-testimonial" role="button" data-slide="prev">
+                                <span class="fa fa-angle-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="btn btn-primary btn-sm" href="#carousel-testimonial" role="button" data-slide="next">
+                                <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!--/#testimonial-->
+
+    <section id="get-in-touch">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">NOSTRUM ALIQUAM INCIDUNT</h2>
+                <p class="text-center wow fadeInDown">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia<br>consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+            </div>
+        </div>
+    </section><!--/#get-in-touch-->
+
+
+    <section id="contact">
+         
+            <iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.9487384794134!2d-46.65749448502214!3d-23.57028448467853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c14f80561d%3A0x72387ca256954a4d!2sR.+Jos%C3%A9+Maria+Lisboa%2C+266+-+Jardim+Paulista%2C+S%C3%A3o+Paulo+-+SP%2C+01423-000!5e0!3m2!1spt-BR!2sbr!4v1554566954462!5m2!1spt-BR!2sbr" width="1350" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+        
+        <div class="container-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-sm-offset-8">
+                        <div class="contact-form">
+                            <h3 class="text-center">Nossas Unidades</h3>
+                            <address>
+                              <h5 class="pb-3 text-center" class="text-center">Unidade 1</h5>        
+                            <p class="c-txt" class="text-center">Rua Alameda Jáu, 45 - Jardim Paulista - SP</p>
+                            <p class="text-center">
+                                11 3288-5274 e 11 94634-0485</p>
+                            <p>
+
+                             <h5 class="pb-3 text-center" class="text-center">Unidade 2</h5>
+                            <p class="c-txt">Rua José Maria Lisboa, 266 - Jardim Paulista - SP</p>
+                            <p class="text-center">
+                                11 3171-1859 e 11 96398-8287</p>
+                            <p>
+                             <h5 class="pb-3 text-center" class="text-center">Unidade 3</h5>
+                            <p class="c-txt">Rua Carlos Sampaio, 201 - Cerqueira Cesar - SP</p>
+                            <p class="text-center">
+                                Atendemos somente dentro do Hotel</p>
+                            <p>     
+                             <h5 class="pb-3 text-center" class="text-center">Nosso E-mail</h5>      
+                                <p class="text-center" >
+                                    <a style="color:#F58220";>lavanderia_acquamarine@outlook.com</a>
+                                </p>
+                        </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--/#bottom-->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; Copyright All Rights Reserved 2019 AlexSites.
+                </div>
+                <div class="col-sm-6">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://wa.me/5511946340485?text=Adorei%20seu%20artigo" 
+           Style="position:fixed;width:60px;height:60px;bottom:205px;right:30px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+         z-index:1000;" target="_blank">
+        <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+        </a>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://www.instagram.com/acquamarinelavanderia/" 
+           Style="position:fixed;width:50px;height:50px;bottom:65px;right:30px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+         z-index:1000;" target="_blank">
+        <i style="margin-top:16px" class="fa fa-instagram"></i>
+        </a>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://www.facebook.com/acquamarinelavanderia/" 
+           Style="position:fixed;width:50px;height:50px;bottom:135px;right:30px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+         z-index:1000;" target="_blank">
+        <i style="margin-top:16px" class="fa fa-facebook"></i>
+        </a>
+    <!-- smooth-scrolling-of-move-up -->
+    <script>
+        $(document).ready(function () {
+            
+             var defaults = {
+                 containerID: 'toTop', // fading element id
+                 containerHoverID: 'toTopHover', // fading element hover id
+                 scrollSpeed: 1200,
+                 easingType: 'linear' 
+             };
+             
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <!-- js-->
+    <!-- Banner text Responsiveslides -->
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/SmoothScroll.min.js "></script>
+    <!-- //smooth-scrolling-of-move-up -->
+    <script src="js/jquery.js"></script>
+    <!--<script src="js/bootstrap.min.js"></script>-->
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/mousescroll.js"></script>
+    <script src="js/move-top.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
-
 </html>
