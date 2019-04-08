@@ -1,0 +1,34 @@
+/*-- Slider --*/
+#main-slider {
+  overflow: hidden;
+
+  .item{
+    height: 558px;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }
+
+  .slider-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+
+    //Styling
+    h2 {
+      margin-top: 180px;
+      font-size: 36px;
+      line-height: 1;
+      text-transform: uppercase;
+      color: #fff;
+      >span {
+        color: @major_color;
+      }
+    }
+    .btn {
+      margin-top: 10px;
+    }
+  }
